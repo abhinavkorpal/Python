@@ -1,5 +1,6 @@
+===============================
 Python
-
+===============================
 
 Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy which emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax which allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.The language provides constructs intended to enable writing clear programs on both a small and large scale.
 
@@ -38,7 +39,7 @@ services that are supported.
     :target: https://github.com/boto/boto3/blob/develop/LICENSE
     :alt: License
 
-Quick Start
+Quick Start: Getting started with Boto 3 is easy, but requires a few steps.
 -----------
 First, install the library and set a default region:
 
@@ -69,35 +70,3 @@ Then, from a Python interpreter:
     >>> s3 = boto3.resource('s3')
     >>> for bucket in s3.buckets.all():
             print(bucket.name)
-
-Getting started with Boto 3 is easy, but requires a few steps.
-
-Installation
-------------
-Install the latest Boto 3 release via pip:
-
-pip install boto3
-You may also install a specific version:
-
-pip install boto3==1.0.0
-
-Configuration
--------------
-Before you can begin using Boto 3, you should set up authentication credentials. Credentials for your AWS account can be found in the IAM Console. You can create or use an existing user. Go to manage access keys and generate a new set of keys.
-
-If you have the AWS CLI installed, then you can use it to configure your credentials file:
-
-aws configure
--------------
-Alternatively, you can create the credential file yourself. By default, its location is at ~/.aws/credentials:
-
-[default]
-aws_access_key_id = YOUR_ACCESS_KEY
-aws_secret_access_key = YOUR_SECRET_KEY
-You may also want to set a default region. This can be done in the configuration file. By default, its location is at ~/.aws/config:
-
-[default]
-region=us-east-1
-Alternatively, you can pass a region_name when creating clients and resources.
-
-This sets up credentials for the default profile as well as a default region to use when creating connections. See Credentials for in-depth configuration sources and options.
