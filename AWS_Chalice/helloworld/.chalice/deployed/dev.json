@@ -15,7 +15,7 @@
     {
       "name": "rest_api",
       "rest_api_id": "y4oezcmxjl",
-      "rest_api_url": "https://y4oezcmxjl.execute-api.us-east-1.amazonaws.com/api/",
+      "rest_api_url": "https://*******.execute-api.us-east-1.amazonaws.com/api/",
       "resource_type": "rest_api"
     }
   ],
