@@ -41,9 +41,10 @@ The new-project command created a sample app that defines a single view, /, that
 Deploying
 ===============================
 Let’s deploy this app. Make sure you’re in the helloworld directory and run chalice deploy:
-.. code-block:: sh
-   $ chalice deploy
 
+```shell
+$ chalice deploy
+```
 
 Initiating first time deployment...
 --------------------------------
@@ -51,26 +52,27 @@ Initiating first time deployment...
 https://abcdefg.execute-api.us-west-2.amazonaws.com/api/
 
 You now have an API up and running using API Gateway and Lambda:
-.. code-block:: sh
 
-   $ curl https://abcdefg.execute-api.us-west-2.amazonaws.com/api/
-   {"hello": "world"}
-   
+```shell
+$ curl https://abcdefg.execute-api.us-west-2.amazonaws.com/api/
+{"hello": "world"}
+```   
 Try making a change to the returned dictionary from the index() function. You can then redeploy your changes by running chalice deploy.
 
 using httpie instead of curl (https://github.com/jakubroztocil/httpie) to test our API. You can install httpie using pip install httpie, or if you’re on Mac, you can run brew install httpie. The Github link has more information on installation instructions. Here’s an example of using httpie to request the root resource of the API we just created. Note that the command name is http:
-.. code-block:: json
 
-   $ http https://abcdefg.execute-api.us-west-2.amazonaws.com/api/
-   HTTP/1.1 200 OK
-   Connection: keep-alive
-   Content-Length: 18
-   Content-Type: application/json
-   Date: Mon, 30 May 2016 17:55:50 GMT
-   X-Cache: Miss from cloudfront
+```shell
+$ http https://abcdefg.execute-api.us-west-2.amazonaws.com/api/
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 18
+Content-Type: application/json
+Date: Mon, 30 May 2016 17:55:50 GMT
+X-Cache: Miss from cloudfront
 
-   {
-       "hello": "world"
-   }
-   
+{
+   "hello": "world"
+}
+```
+
 Additionally, the API Gateway endpoints will be shortened to https://endpoint/api/ for brevity. Be sure to substitute https://endpoint/api/ for the actual endpoint that the chalice CLI displays when you deploy your API (it will look something like https://abcdefg.execute-api.us-west-2.amazonaws.com/api/.
