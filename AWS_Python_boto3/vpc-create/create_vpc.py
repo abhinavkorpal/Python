@@ -538,5 +538,5 @@ def main(profile, region, cidr, name):
 
 if __name__ == "__main__":
 
-  main(profile = 'abcde', region = 'us-east-1', cidr = '10.64.0.0/22', name = 'test-dev')
+  main(profile = 'test', region = 'us-east-2', cidr = '10.0.0.0/16', name = 'test')
 

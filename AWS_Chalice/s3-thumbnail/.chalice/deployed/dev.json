@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "resources": [
+    {
+      "role_name": "s3-thumbnail-dev",
+      "role_arn": "arn:aws:iam::***********:role/s3-thumbnail-dev",
+      "name": "default-role",
+      "resource_type": "iam_role"
+    },
+    {
+      "lambda_arn": "arn:aws:lambda:us-east-1:***********:function:s3-thumbnail-dev-handler",
+      "name": "handler",
+      "resource_type": "lambda_function"
+    },
+    {
+      "name": "handler-s3event",
+      "lambda_arn": "arn:aws:lambda:us-east-1:**********:function:s3-thumbnail-dev-handler",
+      "bucket": "abhinav-chalice-s3-thumbnail",
+      "resource_type": "s3_event"
+    }
+  ],
+  "backend": "api"
+}
