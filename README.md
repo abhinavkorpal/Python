@@ -13,3 +13,26 @@ Python interpreters are available for many operating systems, allowing Python co
 import pdb
 pdb.set_trace()
 ```
+
+## [AWS Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
+
+##### `~/.aws/credentials (Linux & Mac) or %USERPROFILE%\.aws\credentials (Windows)`
+```shell
+[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+[user1]
+aws_access_key_id=AKIAI44QH8DHBEXAMPLE
+aws_secret_access_key=je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+```
+##### `~/.aws/config (Linux & Mac) or %USERPROFILE%\.aws\config (Windows)`
+```shell
+[default]
+region=us-west-2
+output=json
+
+[profile user1]
+region=us-east-1
+output=text
+```
