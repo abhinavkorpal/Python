@@ -39,8 +39,8 @@ output=text
 
 ## Python3 Status Codes Response
 
-![](https://github.com/abhinavkorpal/Python/blob/master/images/requeststatuscode.png)
+<img src="https://github.com/abhinavkorpal/Python/blob/master/images/requeststatuscode.png" height="700" width="700"/>
 
 ## Python3 Content & Headers Response
 
-![](https://github.com/abhinavkorpal/Python/blob/master/images/requestcontentheadersscript.png)
+<img src="https://github.com/abhinavkorpal/Python/blob/master/images/requestcontentheadersscript.png" height="700" width="700"/>
