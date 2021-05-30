@@ -36,3 +36,11 @@ output=json
 region=us-east-1
 output=text
 ```
+
+## Python3 Status Codes Response
+
+![](https://github.com/abhinavkorpal/Python/blob/master/images/requeststatuscode.png)
+
+## Python3 Content & Headers Response
+
+![](https://github.com/abhinavkorpal/Python/blob/master/images/requestcontentheadersscript.png)
