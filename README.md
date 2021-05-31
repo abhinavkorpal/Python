@@ -44,3 +44,7 @@ output=text
 ## Python3 Content & Headers Response
 
 <img src="https://github.com/abhinavkorpal/Python/blob/master/images/requestcontentheadersscript.png" height="700" width="500"/>
+
+## Python3 HTTP Methods
+
+<img src="https://github.com/abhinavkorpal/Python/blob/master/images/httpmethod.png" height="700" width="700"/>
