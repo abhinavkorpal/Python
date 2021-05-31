@@ -37,6 +37,8 @@ region=us-east-1
 output=text
 ```
 
+# Python Request
+
 ## Python3 Status Codes Response
 
 <img src="https://github.com/abhinavkorpal/Python/blob/master/images/requeststatuscode.png" height="700" width="700"/>
