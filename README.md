@@ -39,14 +39,14 @@ output=text
 
 # Python Request
 
-## Python3 Status Codes Response
+### Python3 Status Codes Response
 
 <img src="https://github.com/abhinavkorpal/Python/blob/master/images/requeststatuscode.png" height="700" width="700"/>
 
-## Python3 Content & Headers Response
+### Python3 Content & Headers Response
 
 <img src="https://github.com/abhinavkorpal/Python/blob/master/images/requestcontentheadersscript.png" height="700" width="500"/>
 
-## Python3 HTTP Methods
+### Python3 HTTP Methods
 
 <img src="https://github.com/abhinavkorpal/Python/blob/master/images/httpmethod.png" height="700" width="700"/>
